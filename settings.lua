@@ -27,7 +27,7 @@ data:extend
         minimum_value = 0,
         maximum_value = 255,
     },
-    {   -- toggle nightmod
+    {   -- toggle night
         type = "bool-setting",
         name = "darkness",
         order = "a",

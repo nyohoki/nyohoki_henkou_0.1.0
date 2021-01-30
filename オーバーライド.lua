@@ -1,10 +1,9 @@
--- Change icon for water
+-- change icon for water
 data.raw.fluid["water"].icon = "__nyohoki_henkou__/グラフィック/アイコン/water.png"
 data.raw.fluid["water"].icon_size = 320
 data.raw.fluid["water"].icon_scavle = 0.1
 
-
-
+-- adjust lights
 data.raw.lamp["small-lamp"].light =
 {
     intensity = settings.startup["lamp-light-intensity"].value,
@@ -38,4 +37,3 @@ data.raw.character.character.light =
         g = 255/255,
         b = 255/255
     }
-}
