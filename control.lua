@@ -1,29 +1,17 @@
-if not nyohoki
-then nyohoki = {} 
-end
+if not nyohoki then nyohoki = {} end
 -- player color module --------------------------------
-local akai = settings.global["player-color-r"].value
+--[[local akai = settings.global["player-color-r"].value
 local midori = settings.global["player-color-g"].value
-local ao = settings.global["player-color-b"].value
+local ao = settings.global["player-color-b"].value--]]
 function nyohoki.playercolor()
     game.players[1].color =
     {
-       r = akai,
-       g = midori,
-       b = ao,
+       r = settings.global["player-color-r"].value,
+       g = settings.global["player-color-g"].value,
+       b = settings.global["player-color-b"].value,
     }
 end
---*****************************************************
-function nyohoki.startinventory()
-    local player = game.players[1]
-    --game.players.nyohoki.clear_items_inside()
-    player.get_inventory(defines.inventory.character_main).clear()
-    player.insert{name = "submachine-gun", count = 1}
-    player.insert{name = "uranium-rounds-magazine", count = 50}
-    player.insert{name = "flamethrower", count = 1}
-    player.insert{name = "flamethrower-ammo", count = 50}
-end
--- darkness module --------------------------------------------------------------
+-- darkness module
 if settings.global["darkness"].value == true
 then darkness = true
 elseif settings.global["darkness"].value == false
@@ -42,17 +30,33 @@ function nyohoki.higure()
     local rgblight = settings.global["rgb-light"].value
     omote.brightness_visual_weights = {r = rgblight, g = rgblight, b = rgblight}
 end
---******************************************************************************
+
+
+function nyohoki.startinventory()
+    local pureiyahameru = game.players[1].insert
+        pureiyahameru{name = "submachine-gun", count = 1}
+        pureiyahameru{name = "uranium-rounds-magazine", count = 50}
+        pureiyahameru{name = "flamethrower", count = 1}
+        pureiyahameru{name = "flamethrower-ammo", count = 50}
+end
+
+function nyohoki.playfree()
+    if remote.interfaces["freeplay"] then
+        remote.call("freeplay", "set_disable_crashsite", true)
+        remote.call("freeplay", "set_skip_intro", true)
+    end
+end
+--
+
+
+script.on_event(defines.events.on_player_created,
+function()
+    game.players[1].clear_items_inside()
+    nyohoki.startinventory()
+    nyohoki.playercolor()
+end)
+
 script.on_init(function()
-    local ri = remote.interfaces
-    if ri["freeplay"]
-    or ri["sandbox"]
-    and twilight
-    then script.on_event(defines.events.on_player_created,
-        function(event)
-            nyohoki.playercolor()
-            nyohoki.startinventory()
-            nyohoki.higure()
-       end)
-   end
+    nyohoki.playfree()
+    nyohoki.higure()
 end)
