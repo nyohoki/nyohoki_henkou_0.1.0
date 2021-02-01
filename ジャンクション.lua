@@ -6,7 +6,7 @@ function nyohoki.playercolor() -- adjust player color
        g = settings.global["player-color-g"].value,
        b = settings.global["player-color-b"].value,
     }
-end
+end--[[
 if settings.global["darkness"].value == true
 then darkness = true
 elseif settings.global["darkness"].value == false
@@ -16,7 +16,7 @@ function nyohoki.twilight() -- darkness module
     if darkness == true
     then twilight = true
     end
-end
+end--]]
 function nyohoki.higure()
     local omote = game.surfaces.nauvis
     omote.min_brightness = 0.1
