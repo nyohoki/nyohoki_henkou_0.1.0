@@ -3,3 +3,6 @@ Ability to adjust character color prior to starting Freeplay.
 Water icon changed.
 Changed player starting items.
 Disabled starting cutscene.
+Added many options to change setttings.
+Added tech for stack bonuses, 20 - stack inserter, 5 - inserter
+Added tech for robot storage, max 5
