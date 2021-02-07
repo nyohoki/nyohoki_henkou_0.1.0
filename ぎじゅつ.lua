@@ -1,4 +1,5 @@
-data:extend({
+data:extend
+({
     {   -- stack_inserter +2 (14)
         type = "technology",
         name = "inserter-capacity-bonus-8",
@@ -19,7 +20,7 @@ data:extend({
         unit =
         {
             count = 700,
-            ingredients = nyohoki.tech.ingredients.almcpus,
+            ingredients = nyohoki.tech.almcpus,
             time = 30,
         },
         upgrade = true,
@@ -48,7 +49,7 @@ data:extend({
         unit =
         {
             count = 800,
-            ingredients = nyohoki.tech.ingredients.almcpus,
+            ingredients = nyohoki.tech.almcpus,
             time = 30,
         },
         upgrade = true,
@@ -73,7 +74,7 @@ data:extend({
         unit =
         {
             count = 900,
-            ingredients = nyohoki.tech.ingredients.almcpus,
+            ingredients = nyohoki.tech.almcpus,
             time = 30,
         },
         upgrade = true,
@@ -102,7 +103,7 @@ data:extend({
         unit =
         {
             count = 1000,
-            ingredients = nyohoki.tech.ingredients.almcpus,
+            ingredients = nyohoki.tech.almcpus,
             time = 30,
         },
         upgrade = true,
@@ -127,7 +128,7 @@ data:extend({
         unit =
         {
                 count = 600, -- +150 from previous.
-                ingredients = nyohoki.tech.ingredients.almcpus,
+                ingredients = nyohoki.tech.almcpus,
                 time = 60,
         },
         upgrade = true,
@@ -152,7 +153,7 @@ data:extend({
         unit =
         {
                 count = 750, -- +150 from previous.
-                ingredients = nyohoki.tech.ingredients.almcpus,
+                ingredients = nyohoki.tech.almcpus,
                 time = 60,
         },
         upgrade = true,
@@ -177,7 +178,7 @@ data:extend({
         unit =
         {
                 count = 900, -- +150 from previous.
-                ingredients = nyohoki.tech.ingredients.almcpus,
+                ingredients = nyohoki.tech.almcpus,
                 time = 60,
         },
         upgrade = true,
@@ -202,7 +203,7 @@ data:extend({
         unit =
         {
                 count = 1050, -- +150 from previous.
-                ingredients = nyohoki.tech.ingredients.almcpus,
+                ingredients = nyohoki.tech.almcpus,
                 time = 60,
         },
         upgrade = true,
@@ -227,7 +228,7 @@ data:extend({
         unit =
         {
                 count = 1200, -- +150 from previous.
-                ingredients = nyohoki.tech.ingredients.almcpus,
+                ingredients = nyohoki.tech.almcpus,
                 time = 60,
         },
         upgrade = true,
@@ -252,7 +253,7 @@ data:extend({
         unit =
         {
                 count = 1350, -- +150 from previous.
-                ingredients = nyohoki.tech.ingredients.almcpus,
+                ingredients = nyohoki.tech.almcpus,
                 time = 60,
         },
         upgrade = true,

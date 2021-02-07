@@ -3,6 +3,21 @@ data.raw.fluid["water"].icon = "__nyohoki_henkou__/グラフィック/アイコ�
 data.raw.fluid["water"].icon_size = 320
 data.raw.fluid["water"].icon_scavle = 0.1
 
+data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box =
+{
+    base_area = 1,
+    pipe_covers = pipecoverspictures(),
+    pipe_connections =
+    {
+        {position = {0, -1}},
+        {
+            position = {0, 1},
+            max_underground_distance = settings.startup["underground-pipe-length"].value
+        },
+    },
+}
+data.raw["inserter"]["stack-filter-inserter"].filter_count = settings.startup["stack-filter-inserter"].value
+
 data.raw["electric-pole"]["big-electric-pole"].maximum_wire_distance = settings.startup["big-electric-pole-wire-distance"].value
 
 data.raw["tool"]["automation-science-pack"].stack_size = settings.startup["sciencepack-stack-size"].value

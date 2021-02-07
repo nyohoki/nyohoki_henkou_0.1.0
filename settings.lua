@@ -212,7 +212,7 @@ data:extend
         name = "cargo-wagon-inventory-size",
         order = "w",
         setting_type = "startup",
-        default_value = 80,
+        default_value = 40,
     },
     {   -- tank inventory size
         type = "int-setting",
@@ -242,5 +242,19 @@ data:extend
         setting_type = "startup",
         default_value = 25,
     },  -- construction radius 55
+    {   -- underground pipe length
+        type = "int-setting",
+        name = "underground-pipe-length",
+        order = "upl",
+        setting_type = "startup",
+        default_value = 10,
+    },
+    {   -- stack filter inserter
+        type = "int-setting",
+        name = "stack-filter-inserter",
+        order = "s-f-i",
+        setting_type = "startup",
+        default_value = 1,
+    },
 
 })

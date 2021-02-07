@@ -5,8 +5,8 @@ require("かんすう")         -- function
 require("オーバーライド")   -- override
 require("めいぼ")           -- list of names
 require("ぎじゅつ")         -- technology
+require("しけん")           -- test
 
 
 
 -- testing
-data.raw["lab"]["lab"].backer_name = "OKAY"

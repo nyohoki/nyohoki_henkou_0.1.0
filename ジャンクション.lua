@@ -1,7 +1,6 @@
 nyohoki.tech = {}
-nyohoki.tech.ingredients = {}
 
-nyohoki.tech.ingredients.almcpus =
+nyohoki.tech.almcpus =
 {
     {
         name = "automation-science-pack",

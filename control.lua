@@ -1,6 +1,4 @@
 script.on_init(function()
-    --nyohoki.ctrl.playfree()
-    --nyohoki.ctrl.higure()
     if remote.interfaces["freeplay"] then
         remote.call("freeplay", "set_disable_crashsite", true)
         remote.call("freeplay", "set_skip_intro", true)
@@ -16,8 +14,6 @@ end)
 
 script.on_event(defines.events.on_player_created,
 function()
-    --nyohoki.startinventory
-    --nyohoki.playercolor
     local pureiyahameru = game.players[1].insert
     game.players[1].clear_items_inside()
     pureiyahameru{name = "submachine-gun", count = 1}
